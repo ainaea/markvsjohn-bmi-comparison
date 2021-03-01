@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI compare</title>
+</head>
+<body>
+    <h2>Comparing Mark and John's BMI</h2>
+    
+
+    <script>
+        var marksHeight, marksWeight, johnsHeight, johnsWeight, marksBMI, johnsBMI, marksGreaterThanJohn;
+        marksHeight = window.prompt("Please enter Mark's height(m)");
+        marksWeight = window.prompt("Please enter Mark's weight(kg)");
+        johnsHeight = window.prompt("Please enter John's height(m)");
+        johnsWeight = window.prompt("Please enter John's weight(kg)");
+        marksBMI = marksWeight / (marksHeight * marksHeight);
+        johnsBMI = johnsWeight / (johnsHeight * johnsHeight);
+        marksGreaterThanJohn = marksBMI > johnsBMI;
+        window.alert("Is Mark's BMI higher than John's? " + marksGreaterThanJohn);
+        // window.alert("Please enter John's weight(kg2) "+ 16/2);
+
+    </script>
+</body>
+</html>
